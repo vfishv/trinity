@@ -54,7 +54,7 @@ class TrinityVideoExport(private val context: Context) : VideoExport {
 
   override fun export(info: VideoExportInfo, l: OnExportListener): Int {
     mListener = l
-    val tag = "trinity-export-" + BuildConfig.VERSION_NAME + "-" + getNow()
+    val tag = "trinity-export-" + BuildConfig.LIBRARY_PACKAGE_NAME + "-" + getNow()//
     val resourcePath = context.externalCacheDir?.absolutePath + "/resource.json"
     return export(mHandle, resourcePath, info.path,
       info.width, info.height, info.frameRate, info.videoBitRate,

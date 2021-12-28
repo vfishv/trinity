@@ -6,6 +6,7 @@ import android.app.Application
 import android.content.Context
 import android.os.Environment
 import android.text.TextUtils
+import androidx.multidex.MultiDexApplication
 import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.mars.xlog.Log
 import com.tencent.mars.xlog.Xlog
@@ -19,7 +20,7 @@ import java.io.*
 /**
  * Created by wlanjie on 2019-07-19
  */
-class TrinityApplication : Application() {
+class TrinityApplication : MultiDexApplication() {
 
   companion object {
     init {
