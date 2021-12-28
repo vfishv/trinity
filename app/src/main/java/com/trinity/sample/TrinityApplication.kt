@@ -7,7 +7,7 @@ import android.content.Context
 import android.os.Environment
 import android.text.TextUtils
 import androidx.multidex.MultiDexApplication
-import com.tencent.bugly.crashreport.CrashReport
+//import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.mars.xlog.Log
 import com.tencent.mars.xlog.Xlog
 import kotlinx.coroutines.Dispatchers
