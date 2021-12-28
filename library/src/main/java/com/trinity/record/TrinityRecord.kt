@@ -793,7 +793,10 @@ class TrinityRecord(
    * @return 返回h264数据的大小, 返回0时数据无效
    */
   @Suppress("unused")
-  private fun drainEncoderFromNative(data: ByteArray): Int {
+  private fun drainEncoderFromNative(data: ByteArray?): Int {
+    if (data == null) {
+      return 0;
+    }
     return mSurfaceEncoder.drainEncoder(data)
   }
 
